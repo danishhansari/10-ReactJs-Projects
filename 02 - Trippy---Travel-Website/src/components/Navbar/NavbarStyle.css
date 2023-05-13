@@ -1,0 +1,117 @@
+.navbar{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px ;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .25);
+    width: 95%;
+    height: 80px;
+    border-radius: 30px;
+    position:fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9;
+}
+.navbar .navbar-logo{
+    font-size: 2em;
+    color: #222;
+    cursor: pointer;
+}
+.navbar .nav-menu{
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-gap: 10px;
+    list-style: none;
+    align-items: center;
+}
+.nav-menu .nav-links{
+    font-weight: 400;
+    font-size: 1.2em;
+    padding: .5em 1em;
+    white-space: nowrap;
+}
+.nav-links i{
+    padding-right: 10px;
+}
+.nav-links:hover{
+    background: tomato;
+    transition: .5s background ease-in-out;
+    color: white;
+    border-radius: 5px;
+}
+.nav-links-mobile{
+    display: none;
+}
+.nav-link-desktop{
+    font-size: 1.2em;
+    padding: .5em 1em ;
+    background: rgb(235, 235, 235);
+    border-radius: 5px;
+}
+.nav-link-desktop:hover{
+    background: rgb(219, 219, 219);
+    transition: background .2s ease;
+}
+.mobile-only{
+    display: none;
+}
+.desktop-only{
+    display: block;
+}
+@media (max-width:840px){
+    .mobile-only{
+        display: block;
+        cursor: pointer;
+        font-size: 1.3em;
+    }
+    .desktop-only{
+        display: none;
+    }
+    .navbar .nav-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #fff;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        opacity: 0;
+        align-items: stretch;
+        padding: 80px 0 30px 0;
+        margin: 0;
+        transition: all .3s ease;
+        border-radius: 23px;
+    }
+    .nav-menu.active{
+        left: 0;
+        opacity: 1;
+        z-index: -1;
+        transition: all .3s ease;
+    }
+    .nav-links{
+        display: block;
+        width: 80%;
+        margin: auto;
+        font-size: 1.2em;
+        padding: 2em 0;
+        text-align: center;
+    }
+    .nav-links:hover{
+        transition: none;
+        background-color: tomato;
+    }
+    .nav-links-mobile{
+        display: block;
+        text-align: center;
+        padding: .5em ;
+        margin: auto;
+        border-radius: 4px ;
+        width: 80%;
+        background: tomato;
+        color:#fff;
+    }
+}
