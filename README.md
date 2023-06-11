@@ -6,8 +6,8 @@ This is Repo contain all the React Projects
 | :-: | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | 01  | [Photo Gallery App]()                             | [Live Demo](https://photogalleryy.vercel.app/)               |
 | 02  | [Trippy Travel]()                               | [Live Demo](https://trippytravel.vercel.app/)                |
-| 03  | [Coming soon]()                       | [Live Demo](Coming soon) |
-| 04  | [Coming soon]()                          | [Live Demo](Coming soon)          |
+| 03  | [Calculator]()                       | [Live Demo](https://reacttcalculatorr.vercel.app) |
+| 04  | [Music App]()                          | [Live Demo](https://musicappl.vercel.app)          |
 | 05  | [Coming soon]()                               | [Live Demo](Coming soon)                |
 | 06  | [Coming soon]()                           | [Live Demo](Coming soon)              |
 | 07  | [Coming soon]()                       | [Live Demo](Coming soon)            |
